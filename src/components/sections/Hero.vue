@@ -43,7 +43,7 @@ import tabla2 from '../../assets/tabla2.png'
         </div>
         <div class="contenedor">
           <div class="contenedorNumeroyTexto">
-            <img class="tabla1" :src="numero2" alt="02"/>
+            <img class="numero" :src="numero2" alt="02"/>
             <p class="h3">En la etapa de <b>definir</b>, se identificó que el principal problema era un flujo de pasos deficiente para completar la tarea. Los usuarios no sabían cómo realizarla correctamente y, aun cuando lo lograban, no comprendían cómo lo habían hecho, lo que generaba frustración y abandono de la plataforma.</p>
           </div>
           <div class="carrosel">

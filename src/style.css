@@ -2,13 +2,46 @@ html, body, #app {
   width: 100%;
   height: 100%;
   margin: 0;
+}/* Importación desde Google Fonts (o usa @font-face si es local) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,400;8..144,600&display=swap');
+
+:root {
+  --font-h3: 'Roboto Flex', sans-serif;
 }
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* Estilo base para todos los h3 */
+h3 {
+  font-family: var(--font-h3);
+  font-weight: 400; /* Regular */
+  font-size: 22px;
+  letter-spacing: -0.05em; /* Esto equivale al -5% */
+  margin: 0;
+  color: #d9d9d9;
+}
+
+/* Variante para h3 con Highlight */
+h3.highlight {
+  font-weight: 600; /* SemiBold */
+  font-style: italic;
+  /* El tamaño y espaciado se heredan del h3 base,
+     a menos que necesites cambiarlos explícitamente */
+}
+
+/* Variante titulo para h3*/
+h3.title {
+  font-weight: 600;
+  font-style: italic;
+  font-size: 60px;
+}
+
+/* Esto debe ir en un archivo global o en un <style> sin scoped */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  font-family: 'Inter', system-ui, sans-serif;
-  font-size: 22px;          /* tamaño base */
-  background: #1D1D27;
-  color: white;
-  line-height: 1.5;
+  overflow-x: hidden; /* Esto es un "seguro de vida" contra el espacio blanco */
+  width: 100%;
 }
